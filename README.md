@@ -10,4 +10,4 @@ Examples of common [React Hooks](https://reactjs.org/docs/hooks-intro.html) refa
 - [ ] `useReducer()`
 - [ ] `useCallback()`
 - [ ] `useMemo()`
-- [ ] `useRef()`
+- [x] `useRef()`

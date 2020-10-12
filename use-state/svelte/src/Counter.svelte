@@ -1,5 +1,5 @@
 <script>
-	let count = 0
+  let count = 0
 </script>
 
 Count: {count}

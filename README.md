@@ -9,5 +9,5 @@ Examples of common [React Hooks](https://reactjs.org/docs/hooks-intro.html) refa
 - [ ] `useContext()`
 - [ ] `useReducer()`
 - [ ] `useCallback()`
-- [ ] `useMemo()`
+- [x] `useMemo()`
 - [x] `useRef()`

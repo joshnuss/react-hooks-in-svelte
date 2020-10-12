@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    node: true
   },
   plugins: ['svelte3'],
   ignorePatterns: ['node_modules/', 'public/build'],

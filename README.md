@@ -8,6 +8,6 @@ Examples of common [React Hooks](https://reactjs.org/docs/hooks-intro.html) refa
 - [x] `useEffect()`
 - [ ] `useContext()`
 - [ ] `useReducer()`
-- [ ] `useCallback()`
+- [x] `useCallback()`
 - [x] `useMemo()`
 - [x] `useRef()`

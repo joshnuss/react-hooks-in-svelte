@@ -5,7 +5,7 @@ Examples of common [React Hooks](https://reactjs.org/docs/hooks-intro.html) in S
 # Hooks
 
 - [x] `useState()`
-- [ ] `useEffect()`
+- [x] `useEffect()`
 - [ ] `useContext()`
 - [ ] `useReducer()`
 - [ ] `useCallback()`

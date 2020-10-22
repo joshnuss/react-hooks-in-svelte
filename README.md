@@ -60,7 +60,7 @@ In Svelte, event handlers are declared inside `<script>` tags, so they won't be 
 [React example](/use-memo/react/src/Fibonacci.js)<br/>
 [Svelte example](/use-memo/svelte/src/Fibonacci.svelte)
 
-In Svelte, all reactive statements are memoized. Instead of `const var = useMemo(expression)`, you can use `$: var = expression`.
+In Svelte, all reactive statements are memoized. Instead of `const var = useMemo(expression, dependencies)`, you can use `$: var = expression`. Notice with Svelte, you don't need to declare the dependencies. The compiler infers them for you.
 
 ![Diff of useMemo](/images/useMemo.jpeg?raw=true)
 

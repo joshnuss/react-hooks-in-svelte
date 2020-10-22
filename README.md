@@ -15,9 +15,9 @@ Examples of common [React Hooks](https://reactjs.org/docs/hooks-intro.html) refa
 
 In React, there are 3 ways to `useEffect()`.
 
-1. With `null` dependencies. (second params empty)
-2. With an empty array as dependencies: `useEffect(fn, [])`
-3. With a list of dependency vars: `useEffect(fn, [a, b, c])`
+1. With `null` dependencies: `useEffect(fn)`. This runs on every render.
+2. With an empty array as dependencies: `useEffect(fn, [])`. This runs during mount, and cleanup function runs on unmount.
+3. With a list of dependency vars: `useEffect(fn, [a, b, c])`. This reavaulates whenever a dependency changes. Cleans up last value if needed.
 
 This is an example of #2, where the callback runs when component is mounted.
 
@@ -67,7 +67,7 @@ In Svelte, all reactive statements are memoized. Instead of `const var = useMemo
 [React example](/use-ref/react/src/TextInputWithFocusButton.js)<br/>
 [Svelte example](/use-ref/svelte/src/TextInputWithFocusButton.svelte)
 
-In Svelte, `useRef()` is called `bind:this`.
+In Svelte, `useRef()` is `bind:this`.
 
 ![Diff of useRef](/images/useRef.jpeg?raw=true)
 

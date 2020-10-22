@@ -53,9 +53,9 @@ function Component() {
 }
 ```
 
-So we need to wrap `handleClick` in a `useCallback`, to give a hint to the rendering system that the handler hasn't changed.
+So we need to wrap `handleClick` in a `useCallback`, to give a hint to the rendering system that the handler wasn't changed.
 
-In Svelte, event handlers are declared inside `<script>` tags, so they won't be redefined on every render. They are defined once per component, similar to how event handlers worked in `React.Component`.
+In Svelte this isn't needed, because event handlers are declared inside `<script>` tags. They aren't defined in the render path and therefore arent't redefined on every render. They are defined once per component, so they work similar to how event handlers worked with `React.Component`.
 
 ## useMemo
 

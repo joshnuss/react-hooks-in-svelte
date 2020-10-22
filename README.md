@@ -37,13 +37,13 @@ Another difference is that context in Svelte does not insert anything into the v
 [React example](/use-context/react/src/App.js)<br/>
 [Svelte example](/use-context/svelte/src/App.svelte)
 
-### Root component
+**Root component**
 ![Diff of useEffect App](/images/useContext-app.png?raw=true)
 
-### Intermediate component
+**Intermediate component**
 ![Diff of useEffect Toolbar](/images/useContext-toolbar.png?raw=true)
 
-### Grand-child component
+**Grand-child component**
 ![Diff of useEffect ThemedButton](/images/useContext-themedbutton.png?raw=true)
 
 ## useReducer

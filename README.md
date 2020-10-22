@@ -6,14 +6,14 @@ Examples of common [React Hooks](https://reactjs.org/docs/hooks-intro.html) refa
 
 ## useState
 
-[React example](/use-state/react/src/Counter.js)
+[React example](/use-state/react/src/Counter.js)<br/>
 [Svelte example](/use-state/svelte/src/Counter.svelte)
 
 ![Diff of useState](/images/useState.jpeg?raw=true)
 
 ## useEffect
 
-[React example](/use-effect/react/src/Timer.js)
+[React example](/use-effect/react/src/Timer.js)<br/>
 [Svelte example](/use-effect/svelte/src/Timer.svelte)
 
 ![Diff of useEffect](/images/useEffect.png?raw=true)
@@ -32,14 +32,14 @@ Coming soon
 
 ## useMemo
 
-[React example](/use-memo/react/src/Fibonacci.js)
+[React example](/use-memo/react/src/Fibonacci.js)<br/>
 [Svelte example](/use-memo/svelte/src/Fibonacci.svelte)
 
 ![Diff of useMemo](/images/useMemo.jpeg?raw=true)
 
 ## useRef
 
-[React example](/use-ref/react/src/TextInputWithFocusButton.js)
+[React example](/use-ref/react/src/TextInputWithFocusButton.js)<br/>
 [Svelte example](/use-ref/svelte/src/TextInputWithFocusButton.svelte)
 
 ![Diff of useRef](/images/useRef.jpeg?raw=true)

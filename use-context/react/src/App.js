@@ -12,7 +12,7 @@ const themes = {
   }
 };
 
-export const ThemeContext = setContext(themes.light)
+export const ThemeContext = createContext(themes.light)
 
 export default function App() {
   return (

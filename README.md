@@ -43,13 +43,15 @@ Take this example:
 ```js
 // This function (component) is executed on every render
 function Component() {
-  // this event is redefined on every render
+  // this event handler is redefined on every render
   const handleClick = () => ...
   
-  // because handleClick is refined on each render, ChildComponent will be re-rendered too because it's `onClick` prop changed
+  // because `handleClick` is refined on every render, `ChildComponent` will be re-rendered too. Because it's `onClick` prop changed
   return <ChildComponent onClick={handleClick}/>
 }
 ```
+
+So we need to wrap `handleClick` in a `useCallback`, to give a hint to the rendering system that the handler hasn't changed.
 
 In Svelte, event handlers are declared inside `<script>` tags, so they won't be redefined on every render. They are defined once per component, similar to how event handlers worked in `React.Component`.
 

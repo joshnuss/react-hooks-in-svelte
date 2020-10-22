@@ -6,6 +6,8 @@ Examples of common [React Hooks](https://reactjs.org/docs/hooks-intro.html) refa
 
 ## useState
 
+In Svelte, `const [varName, set] = useState(initialValue)` becomes `let varName = initialValue`. The setter function is replaced with JavaScript's assignment operator `=`.  
+
 [React example](/use-state/react/src/Counter.js)<br/>
 [Svelte example](/use-state/svelte/src/Counter.svelte)
 
@@ -19,7 +21,7 @@ In React, there are 3 ways to `useEffect()`.
 2. With an empty array as dependencies: `useEffect(fn, [])`. This runs during mount, and cleanup function runs on unmount.
 3. With a list of dependency vars: `useEffect(fn, [a, b, c])`. This reavaulates whenever a dependency changes. Cleans up last value if needed.
 
-This is an example of #2, where the callback runs when component is mounted.
+This is an example of #2, where the callback runs when component is mounted and cleanup runs when unmounted.
 
 [React example](/use-effect/react/src/Timer.js)<br/>
 [Svelte example](/use-effect/svelte/src/Timer.svelte)

@@ -75,7 +75,7 @@ In Svelte, `useRef()` is `bind:this`.
 
 Context in both frameworks are very similar. One difference is that context in Svelte is not reactive by default. To make it reactive, context data should be wrapped in a store.
 
-Another difference is that context in Svelte does not insert anything into the visual component tree. There is no `<Context.Provider>` element like in React.
+Another difference is that context in Svelte does not insert anything into the visual component tree. There is no `<Context.Provider>` element like in React, instead use the `setContext()` function.
 
 [React example](/use-context/react/src/App.js)<br/>
 [Svelte example](/use-context/svelte/src/App.svelte)

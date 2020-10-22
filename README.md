@@ -30,7 +30,16 @@ This is an example of #2, where the callback runs when component is mounted and 
 
 ## useContext
 
-Coming soon
+Context in both frameworks are very similar. One difference is that context is not reactive in Svelte. To make it reactive, you can put a store in the context value.
+
+Another difference is that context in Svelte does not insert anything into the visual component tree. There is no `<Context.Provider>`.
+
+[React example](/use-context/react/src/App.js)<br/>
+[Svelte example](/use-context/svelte/src/App.svelte)
+
+![Diff of useEffect App](/images/useContext-app.png?raw=true)
+![Diff of useEffect Toolbar](/images/useContext-toolbar.png?raw=true)
+![Diff of useEffect ThemedButton](/images/useContext-themedbutton.png?raw=true)
 
 ## useReducer
 

@@ -1,10 +1,8 @@
 # React Hooks in Svelte
 
-Examples of common [React Hooks](https://reactjs.org/docs/hooks-intro.html) ported to Svelte.
+Mapping [React Hooks](https://reactjs.org/docs/hooks-intro.html) to Svelte.
 
-# Hooks
-
-## useState
+# useState
 
 In Svelte, `const [varName, set] = useState(initialValue)` becomes `let varName = initialValue`. The setter function is replaced with JavaScript's assignment operator `=`.  
 
@@ -13,7 +11,7 @@ In Svelte, `const [varName, set] = useState(initialValue)` becomes `let varName 
 
 ![Diff of useState](/images/useState.jpeg?raw=true)
 
-## useEffect
+# useEffect
 
 In React, there are 3 ways to `useEffect()`.
 
@@ -28,7 +26,7 @@ This is an example of #2, where the callback runs when component is mounted and 
 
 ![Diff of useEffect](/images/useEffect.png?raw=true)
 
-## useMemo
+# useMemo
 
 [React example](/use-memo/react/src/Fibonacci.js)<br/>
 [Svelte example](/use-memo/svelte/src/Fibonacci.svelte)
@@ -37,7 +35,7 @@ In Svelte, all reactive statements are memoized. Instead of `const var = useMemo
 
 ![Diff of useMemo](/images/useMemo.jpeg?raw=true)
 
-## useRef
+# useRef
 
 [React example](/use-ref/react/src/TextInputWithFocusButton.js)<br/>
 [Svelte example](/use-ref/svelte/src/TextInputWithFocusButton.svelte)
@@ -46,7 +44,7 @@ In Svelte, `useRef()` is `bind:this`.
 
 ![Diff of useRef](/images/useRef.jpeg?raw=true)
 
-## useReducer
+# useReducer
 
 [React example](/use-reducer/react/src/Counter.js)<br/>
 [Svelte example](/use-reducer/svelte/src/Counter.svelte)
@@ -55,7 +53,7 @@ In Svelte, `useReducer()` can be replaced with a `writable()` store. Instead of 
 
 ![Diff of useReducer](/images/useReducer.png?raw=true)
 
-## useCallback
+# useCallback
 
 In React, `useCallback` is used to memoize functions. This is needed because event handlers are re-defined on every render.
 
@@ -76,7 +74,7 @@ So we need to wrap `handleClick` in a `useCallback`, to give a hint to the rende
 
 In Svelte this isn't needed, because event handlers are declared inside `<script>` tags. They aren't defined in the render path and therefore arent't redefined on every render. They are defined once per component, so they work similar to how event handlers worked with `React.Component`.
 
-## useContext
+# useContext
 
 Context in both frameworks are very similar. One difference is that context in Svelte is not reactive by default. To make it reactive, context data should be wrapped in a store.
 
@@ -93,7 +91,6 @@ Another difference is that context in Svelte does not insert anything into the v
 
 **Grand-child component**
 ![Diff of useEffect ThemedButton](/images/useContext-themedbutton.png?raw=true)
-
 
 # License
 

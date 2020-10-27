@@ -30,7 +30,12 @@ This is an example of #2, where the callback runs when component is mounted and 
 
 ## useReducer
 
-Coming soon
+[React example](/use-reducer/react/src/Counter.js)<br/>
+[Svelte example](/use-reducer/svelte/src/Counter.svelte)
+
+In Svelte, `useReducer()` can be replaced with a `writable()` store. Instead of dispatching using a `switch` statement, functions can be defined on the store directly.
+
+![Diff of useRef](/images/useReducer.png?raw=true)
 
 ## useCallback
 

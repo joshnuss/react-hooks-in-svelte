@@ -35,7 +35,7 @@ This is an example of #2, where the callback runs when component is mounted and 
 
 In Svelte, `useReducer()` can be replaced with a `writable()` store. Instead of dispatching using a `switch` statement, functions can be defined on the store directly.
 
-![Diff of useRef](/images/useReducer.png?raw=true)
+![Diff of useReducer](/images/useReducer.png?raw=true)
 
 ## useCallback
 

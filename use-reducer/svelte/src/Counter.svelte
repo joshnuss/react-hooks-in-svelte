@@ -1,0 +1,17 @@
+<script>
+  import { writable } from 'svelte/store'
+  const initialState = {count: 0}
+
+  const store = writable(initialState)
+
+  store.increment = () => {
+    store.update(state => ({count: state.count + 1}))
+  }
+  store.decrement = () => {
+    store.update(state => ({count: state.count - 1}))
+  }
+</script>
+
+Count: {$store.count}
+<button on:click={() => store.decrement()}>-</button>
+<button on:click={() => store.increment()}>+</button>

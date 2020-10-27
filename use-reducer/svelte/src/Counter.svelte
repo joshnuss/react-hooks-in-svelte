@@ -1,8 +1,8 @@
 <script>
   import { writable } from 'svelte/store'
-  const initialState = {count: 0}
+  const initialValue = {count: 0}
 
-  const store = writable(initialState)
+  const store = writable(initialValue)
 
   store.increment = () => {
     store.update(state => ({count: state.count + 1}))

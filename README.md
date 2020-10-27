@@ -28,6 +28,24 @@ This is an example of #2, where the callback runs when component is mounted and 
 
 ![Diff of useEffect](/images/useEffect.png?raw=true)
 
+## useMemo
+
+[React example](/use-memo/react/src/Fibonacci.js)<br/>
+[Svelte example](/use-memo/svelte/src/Fibonacci.svelte)
+
+In Svelte, all reactive statements are memoized. Instead of `const var = useMemo(() => expression, dependencies)`, you can use `$: var = expression`. Notice with Svelte, you don't need to declare the dependencies. The compiler infers them for you.
+
+![Diff of useMemo](/images/useMemo.jpeg?raw=true)
+
+## useRef
+
+[React example](/use-ref/react/src/TextInputWithFocusButton.js)<br/>
+[Svelte example](/use-ref/svelte/src/TextInputWithFocusButton.svelte)
+
+In Svelte, `useRef()` is `bind:this`.
+
+![Diff of useRef](/images/useRef.jpeg?raw=true)
+
 ## useReducer
 
 [React example](/use-reducer/react/src/Counter.js)<br/>
@@ -57,24 +75,6 @@ function Component() {
 So we need to wrap `handleClick` in a `useCallback`, to give a hint to the rendering system that the handler wasn't changed.
 
 In Svelte this isn't needed, because event handlers are declared inside `<script>` tags. They aren't defined in the render path and therefore arent't redefined on every render. They are defined once per component, so they work similar to how event handlers worked with `React.Component`.
-
-## useMemo
-
-[React example](/use-memo/react/src/Fibonacci.js)<br/>
-[Svelte example](/use-memo/svelte/src/Fibonacci.svelte)
-
-In Svelte, all reactive statements are memoized. Instead of `const var = useMemo(() => expression, dependencies)`, you can use `$: var = expression`. Notice with Svelte, you don't need to declare the dependencies. The compiler infers them for you.
-
-![Diff of useMemo](/images/useMemo.jpeg?raw=true)
-
-## useRef
-
-[React example](/use-ref/react/src/TextInputWithFocusButton.js)<br/>
-[Svelte example](/use-ref/svelte/src/TextInputWithFocusButton.svelte)
-
-In Svelte, `useRef()` is `bind:this`.
-
-![Diff of useRef](/images/useRef.jpeg?raw=true)
 
 ## useContext
 

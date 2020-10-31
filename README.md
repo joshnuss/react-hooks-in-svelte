@@ -1,6 +1,6 @@
 # React Hooks in Svelte
 
-[React Hook](https://reactjs.org/docs/hooks-intro.html) examples ported to Svelte.
+[React Hook](https://reactjs.org/docs/hooks-intro.html) examples ported to [Svelte](https://svelte.dev).
 
 # useState
 

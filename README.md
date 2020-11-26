@@ -17,7 +17,7 @@ In React, there are 3 ways to `useEffect()`.
 
 1. With `null` dependencies: `useEffect(fn)`. This runs on every render.
 2. With an empty array as dependencies: `useEffect(fn, [])`. This runs during mount, and cleanup function runs on unmount.
-3. With a list of dependency vars: `useEffect(fn, [a, b, c])`. This reavaulates whenever a dependency changes. The cleanup runs when any dependencies change and during unmount.
+3. With a list of dependency vars: `useEffect(fn, [a, b, c])`. This reavaulates whenever a dependency changes. The cleanup runs whenever dependencies change and during unmount.
 
 This is an example of #2, where the callback runs when component is mounted and cleanup runs when unmounted.
 

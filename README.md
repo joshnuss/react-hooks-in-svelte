@@ -17,7 +17,7 @@ In React, there are 3 ways to `useEffect()`.
 
 1. With `null` dependencies: `useEffect(fn)`. This runs on every render.
 2. With an empty array as dependencies: `useEffect(fn, [])`. This runs during mount, and cleanup function runs on unmount.
-3. With a list of dependency vars: `useEffect(fn, [a, b, c])`. This reavaulates whenever a dependency changes. Cleans up last value if needed.
+3. With a list of dependency vars: `useEffect(fn, [a, b, c])`. This reavaulates whenever a dependency changes. The cleanup runs when any dependencies change and during unmount.
 
 This is an example of #2, where the callback runs when component is mounted and cleanup runs when unmounted.
 
@@ -31,7 +31,7 @@ This is an example of #2, where the callback runs when component is mounted and 
 [React example](/use-memo/react/src/Fibonacci.js)<br/>
 [Svelte example](/use-memo/svelte/src/Fibonacci.svelte)
 
-In Svelte, all reactive statements are memoized. Instead of `const var = useMemo(() => expression, dependencies)`, you can use `$: var = expression`. Notice with Svelte, you don't need to declare the dependencies. The compiler infers them for you.
+In Svelte, all reactive statements are memoized. Instead of `const var = useMemo(() => expression, dependencies)`, you can use `$: var = expression`. Notice that with Svelte, you don't need to declare the dependencies. The compiler infers them for you.
 
 ![Diff of useMemo](/images/useMemo.jpeg?raw=true)
 

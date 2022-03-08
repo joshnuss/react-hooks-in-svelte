@@ -2,6 +2,8 @@
 
 [React Hook](https://reactjs.org/docs/hooks-intro.html) examples ported to [Svelte](https://svelte.dev).
 
+**New 📣**: [React ⇆ Svelte Cheatsheet](https://dev.to/joshnuss/react-to-svelte-cheatsheet-1a2a)
+
 # useState
 
 In Svelte, `const [varName, set] = useState(initialValue)` becomes `let varName = initialValue`. The setter function is replaced with JavaScript's assignment operator `=`.  
